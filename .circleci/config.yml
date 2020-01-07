@@ -1,7 +1,9 @@
 jobs:
   run_tests:
     steps:
-      - rn/yarn_install
+      - run:
+          command: yarn
+          name: Install Packages
       - run:
           command: yarn jest
           name: Jest
