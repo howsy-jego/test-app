@@ -1,4 +1,7 @@
 jobs:
+  build:
+    macos:
+      xcode: "9.0"
   run_tests:
     steps:
       - run:
